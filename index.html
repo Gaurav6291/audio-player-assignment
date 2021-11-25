@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio-Player</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body onload="loadBody()">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="loadBody()">
+    <!-- call a function after the loading of the document, this function is used to make the bars -->
     <div class="container">
-        <canvas id="canvas" width="1200px" height="200"></canvas>
-        <div id="btnSection">
-                <!-- font-Awesome Icons -->
-                <div class="btnStyle1">
-                <i id="volume" class="fas fa-volume-up"></i>
-            </div>
-        <div class="btnStyle2">
-                <i id="playNow" class="fas fa-3x fa-play-circle" id="masterPlay"></i>
-            </div>
+      <!-- creating a canvas  -->
+      <canvas id="canvas" width="1200px" height="200"></canvas>
+      <div id="btnSection">
+        <!-- font-Awesome Icons for volume, play and foreward buttons  -->
         <div class="btnStyle1">
-                <i id="next" class="fas fa-forward"></i>
-            </div>
+          <i id="volume" class="fas fa-volume-up"></i>
         </div>
+        <div class="btnStyle2">
+          <i id="playNow" class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+        </div>
+        <div class="btnStyle1">
+          <i id="next" class="fas fa-forward"></i>
+        </div>
+      </div>
     </div>
     <!-- static Tags -->
     <div id="tag1">
-        Introduction
-        <div class="tag1Line"></div>
-        <div class="circle"></div>
+      Introduction
+      <div class="tag1Line"></div>
+      <div class="circle"></div>
     </div>
     <div id="tag2">
-        One_Six
-        <div class="tag2Line"></div>
-        <div class="circle"></div>
+      One_Six
+      <div class="tag2Line"></div>
+      <div class="circle"></div>
     </div>
     <div id="tag3">
-        Polite
-        <div class="tag3Line"></div>
-        <div class="circle"></div>
+      Polite
+      <div class="tag3Line"></div>
+      <div class="circle"></div>
     </div>
     <div id="tag4">
-        Rapport Building Empathy
-        <div class="tag4Line"></div>
-        <div class="circle"></div>
+      Rapport Building Empathy
+      <div class="tag4Line"></div>
+      <div class="circle"></div>
     </div>
     <div id="tag5">
-        Rapport Building Energy
-        <div class="tag5Line1"></div>
-        <div class="circle"></div>
-        <div class="tag5Line2"></div>
-        <div class="circle1 circle"></div>
+      Rapport Building Energy
+      <div class="tag5Line1"></div>
+      <div class="circle"></div>
+      <div class="tag5Line2"></div>
+      <div class="circle1 circle"></div>
     </div>
-</body>
+  </body>
 </html>
-<script src="https://kit.fontawesome.com/e469a88b2c.js" crossorigin="anonymous"></script>
+<!-- fontawesome kit link -->
+<script
+  src="https://kit.fontawesome.com/e469a88b2c.js"
+  crossorigin="anonymous"
+></script>
 <script src="script.js"></script>
