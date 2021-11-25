@@ -1,3 +1,8 @@
 .container{
     text-align: center;
 }
+#btnSection{
+    border: 1px solid seagreen;
+    background-color: silver;
+    height: 150px;
+}
