@@ -6,3 +6,10 @@
     background-color: silver;
     height: 150px;
 }
+#btnSection{
+    margin-top: 14px;
+}
+#btnSection i{
+    cursor: pointer;
+    color:rgb(50,188,239);
+}

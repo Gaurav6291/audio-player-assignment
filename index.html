@@ -7,14 +7,14 @@
     <title>Audio-Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="loadBody()">
     <div class="container">
         <canvas id="canvas" width="1200px" height="150" style="border: 1px solid #020101;"></canvas>
         <div id="btnSection">
                 <!-- font-Awesome Icons -->
-                <i class="fas fa-volume-up"></i>
-                <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
-                <i class="fas fa-forward"></i>
+                <i id="volume" class="fas fa-volume-up"></i>
+                <i id="playNow" class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+                <i id="next" class="fas fa-forward"></i>
         </div>
     </div>
 
