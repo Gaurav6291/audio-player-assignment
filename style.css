@@ -1,15 +1,155 @@
+:root {
+    --first: rgb(33,173,57);
+    --second: rgb(23,199,144);
+    --third: rgb(28,8,191);
+    --fourth: rgb(154,108,104);
+    --fifth: rgb(102,155,67);
+    --sixth: rgb(23,199,144);
+  }
 .container{
     text-align: center;
+    margin-top: 50px;
 }
 #btnSection{
-    border: 1px solid seagreen;
-    background-color: silver;
     height: 150px;
-}
-#btnSection{
     margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnStyle2, .btnStyle1{
+    display: inline-block;
+    border: 3px solid rgb(196, 202, 211); 
+    border-radius: 50px;   
+}
+.btnStyle1{
+width: 50px;
+}
+.btnStyle2{
+    width: 100px;
 }
 #btnSection i{
-    cursor: pointer;
+    cursor: pointer; 
     color:rgb(50,188,239);
 }
+#tag1, #tag2, #tag3, #tag4, #tag5{
+    position: fixed;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+}
+.tag1Line, .tag2Line, .tag3Line, .tag4Line, .tag5Line1, .tag5Line2{
+    position: absolute;
+    width:5px;
+}
+#tag1{    
+    width: 90px;
+    border: 1px solid var(--first);
+    background-color: var(--first);
+    left: 15%;
+    top: 90px;
+}
+#tag1 > .circle{
+    top: 70px;
+    left: 38px;
+    background-color: var(--first);
+}
+.tag1Line{
+    height: 55px;
+    top: 17px;
+    left: 41px;
+    background-color: var(--first);
+}
+#tag2 {
+    width: 60px;
+    border: 1px solid var(--second);
+    background-color: var(--second);
+    left: 28%;
+    top: 67px;
+  }
+  #tag2 > .circle {
+    top: 95px;
+    left: 20px;
+    background-color: var(--second);
+  }
+  
+  .tag2Line {
+    height: 85px;
+    top: 20px;
+    left: 23px;
+    background-color: var(--second);
+  }
+  #tag3 {
+    width: 50px;
+    border: 1px solid var(--third);
+    left: 83%;
+    top: 111px;
+    background-color: var(--third);
+  }
+  #tag3 > .circle {
+    top: 70px;
+    left: 20px;
+    background-color: var(--third);
+  }
+  .tag3Line {
+    height: 55px;
+    top: 20px;
+    left: 24px;
+    background-color: var(--third);
+  }
+  #tag4 {
+    width: 200px;
+    border: 1px solid var(--fourth);
+    left: 72%;
+    top: 75px;
+    background-color: var(--fourth);
+  }
+  #tag4 > .circle {
+    top: 93px;
+    right: 0.5px;
+    background-color: var(--fourth);
+  }
+  .tag4Line {
+    height: 80px;
+    top: 20px;
+    right: 4.5px;
+    background-color: var(--fourth);
+  }
+  #tag5 {
+    width: 190px;
+    border: 1px solid var(--fifth);
+    left: 76%;
+    top: 35px;
+    background-color: var(--fifth);
+  }
+  #tag5 > .circle {
+    top: 140px;
+    left: 20px;
+    background-color: var(--sixth);
+  }
+  
+  #tag5 > .circle1 {
+    position: absolute;
+    top: 140px;
+    left: 177px;
+    background-color: var(--fifth);
+  }
+  .tag5Line1 {
+    height: 125px;
+    top: 20px;
+    left: 24px;
+    background-color: var(--sixth);
+  }
+  .tag5Line2 {
+    height: 125px;
+    top: 20px;
+    right: 5px;
+    background-color: var(--fifth);
+  }
+  .circle {
+       position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+  }

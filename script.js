@@ -17,8 +17,8 @@ function loadBody(){
            let y = Math.ceil(Math.random()*40)+60;
            let x = i*5+10;
            obj[i] = [height, y, x];
+           context.fillStyle="rgb(232,231,232)";
     context.fillRect(x, y, 6, height);
-    context.fillStyle="black";
         }
        
     }
@@ -32,8 +32,8 @@ audioElement.addEventListener('timeupdate', ()=>{
         for(x in obj){
            if(x == Math.ceil(currentTime)){
                
-        context.fillRect(currentTime*5+10, obj[x][1], 5, obj[x][0]);
-        context.fillStyle="green";
+        context.fillRect(currentTime*5+10, obj[x][1], 4, obj[x][0]);
+        context.fillStyle="rgb(214,182,190)";
            }
         }
     }
@@ -52,7 +52,7 @@ canvas.addEventListener('click', (e)=>{
         //    obj[i] = [height, y, x];
         // let k = Math.ceil(d/10)+1
     context.fillRect(obj[i][2], obj[i][1], 6, obj[i][0]);
-    context.fillStyle="grey";
+    context.fillStyle="rgb(214,182,190)";
         }
        
     }
