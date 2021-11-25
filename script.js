@@ -55,6 +55,8 @@ canvas.addEventListener("click", (e) => {
       context.fillStyle = "rgb(214,182,190)";
     }
   }
+  playNow.classList.add("fa-pause-circle");
+    playNow.classList.remove("fa-play-circle");
 });
 
 // part-4 audio - play/pause
